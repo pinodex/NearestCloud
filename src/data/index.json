@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Amazon Web Services",
+    "data": "aws.json"
+  },
+  {
+    "name": "Google Cloud Platform",
+    "data": "gcp.json"
+  },
+  {
+    "name": "DigitalOcean",
+    "data": "digitalocean.json"
+  }
+]
