@@ -28,18 +28,22 @@ export function ping(url, interval = 300) {
  * Pinger factory
  *
  * @param  {Array}  regions Array of regions
+ * @param  {Number} count   Number of ping per region
  * @return {Observable}     rxjs Observable
  */
-export function makePinger(regions = []) {
+export function makePinger(regions = [], count = 3) {
   return new Observable(async (subscriber) => {
-    for (var i = 0; i < regions.length; i++) {
-      const { url } = regions[i];
+    for (let index = 0; index < regions.length; index++) {
+      const { url } = regions[index];
+      const results = [];
 
-      const result = await ping(url);
+      for (let trial = 0; trial < count; trial++) {
+        results.push(await ping(url));
+      }
 
       subscriber.next({
-        index: i,
-        result
+        index,
+        results
       });
     }
 

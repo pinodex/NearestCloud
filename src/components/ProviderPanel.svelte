@@ -16,6 +16,20 @@
       (first, second) => getComparatorInput(first.latency) - getComparatorInput(second.latency));
   }
 
+  function getMedianLatencyFromResults(results) {
+    const latencies = results
+      .map(({ latency }) => latency)
+      .sort((first, second) => first - second);
+
+    const middle = Math.floor(latencies.length / 2);
+
+    if (latencies.length % 2 === 0) {
+        return (latencies[middle - 1] + latencies[middle]) / 2;
+    }
+
+    return latencies[middle];
+  }
+
   regions = regions.map((region) => ({
     ...region,
     latency: null
@@ -23,8 +37,8 @@
 
   const pinger = makePinger(regions);
 
-  pinger.subscribe(({ index, result }) => {
-    regions[index].latency = result.latency;
+  pinger.subscribe(({ index, results }) => {
+    regions[index].latency = getMedianLatencyFromResults(results);
 
     sortedRegions = sortByLatency();
   });
