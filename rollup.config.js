@@ -3,6 +3,7 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import alias from '@rollup/plugin-alias';
 import json from '@rollup/plugin-json';
+import image from '@rollup/plugin-image';
 import livereload from 'rollup-plugin-livereload';
 import postcss from 'rollup-plugin-postcss';
 import { terser } from 'rollup-plugin-terser';
@@ -42,6 +43,8 @@ export default {
     }),
 
     json(),
+
+    image(),
 
     postcss({
       extract: true
