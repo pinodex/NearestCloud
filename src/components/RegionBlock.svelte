@@ -6,6 +6,7 @@
   export let slug;
   export let url;
   export let latency = null;
+  export let started = false;
 
   let tagClass = 'is-black';
 
@@ -29,15 +30,19 @@
   </div>
 
   <div class="level-right">
-    {#if latency !== null}
+    {#if started && latency !== null}
       <p>
         <span class={`tag ${tagClass}`}>
           {latency}ms
         </span>
       </p>
-    {:else}
+    {:else if started}
       <p>
         <LoadingSpinner />
+      </p>
+    {:else}
+      <p>
+        ...
       </p>
     {/if}
   </div>
