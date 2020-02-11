@@ -4,7 +4,6 @@
 
   export let name;
   export let slug;
-  export let url;
   export let latency = null;
   export let started = false;
 
