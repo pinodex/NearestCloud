@@ -1,7 +1,77 @@
 [
   {
-    "slug": "us-east-1",
-    "name": "us-east-1",
-    "url": "http://3.80.0.0"
+    "slug": "asia-east1",
+    "name": "Taiwan",
+    "url": "http://asia-east1-gce.cloudharmony.net/x"
+  },
+  {
+    "slug": "asia-northeast1",
+    "name": "Tokyo",
+    "url": "http://asia-northeast1-gce.cloudharmony.net/x"
+  },
+  {
+    "slug": "asia-southeast1",
+    "name": "Singapore",
+    "url": "http://asia-southeast1-gce.cloudharmony.net/x"
+  },
+  {
+    "slug": "asia-south1",
+    "name": "Mumbai",
+    "url": "http://asia-south1-gce.cloudharmony.net/x"
+  },
+  {
+    "slug": "australia-southeast1",
+    "name": "Sydney",
+    "url": "http://australia-southeast1-gce.cloudharmony.net/x"
+  },
+  {
+    "slug": "europe-west1",
+    "name": "Belgium",
+    "url": "http://europe-west1-gce.cloudharmony.net/x"
+  },
+  {
+    "slug": "europe-west2",
+    "name": "London",
+    "url": "http://europe-west2-gce.cloudharmony.net/x"
+  },
+  {
+    "slug": "europe-west3",
+    "name": "Frankfurt",
+    "url": "http://europe-west3-gce.cloudharmony.net/x"
+  },
+  {
+    "slug": "europe-west4",
+    "name": "Eemshaven",
+    "url": "http://europe-west4-gce.cloudharmony.net/x"
+  },
+  {
+    "slug": "southamerica-east1",
+    "name": "São Paulo",
+    "url": "http://southamerica-east1-gce.cloudharmony.net/x"
+  },
+  {
+    "slug": "us-east1",
+    "name": "South Carolina",
+    "url": "http://us-east1-gce.cloudharmony.net/x"
+  },
+  {
+    "slug": "us-east4",
+    "name": "Virginia",
+    "url": "http://us-east4-gce.cloudharmony.net/x"
+  },
+  {
+    "slug": "us-west1",
+    "name": "Oregon",
+    "url": "http://us-west1-gce.cloudharmony.net/x"
+  },
+  {
+    "slug": "us-central1",
+    "name": "Iowa",
+    "url": "http://us-central1-gce.cloudharmony.net/x"
+  },
+  {
+    "slug": "northamerica-northeast1",
+    "name": "Montréal",
+    "url": "http://northamerica-northeast1-gce.cloudharmony.net/x"
   }
 ]

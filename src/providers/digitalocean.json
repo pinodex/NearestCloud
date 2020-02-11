@@ -1,7 +1,42 @@
 [
   {
-    "slug": "us-east-1",
-    "name": "us-east-1",
-    "url": "http://3.80.0.0"
+    "slug": "ams2",
+    "name": "Amsterdam",
+    "url": "http://speedtest-ams2.digitalocean.com/x"
+  },
+  {
+    "slug": "blr1",
+    "name": "Bangalore",
+    "url": "http://speedtest-blr1.digitalocean.com/x"
+  },
+  {
+    "slug": "fra1",
+    "name": "Frankfurt",
+    "url": "http://speedtest-fra1.digitalocean.com/x"
+  },
+  {
+    "slug": "lon1",
+    "name": "London",
+    "url": "http://speedtest-lon1.digitalocean.com/x"
+  },
+  {
+    "slug": "nyc1",
+    "name": "New York",
+    "url": "http://speedtest-nyc1.digitalocean.com/x"
+  },
+  {
+    "slug": "sfo1",
+    "name": "California",
+    "url": "http://speedtest-sfo1.digitalocean.com/x"
+  },
+  {
+    "slug": "sgp1",
+    "name": "Singapore",
+    "url": "http://speedtest-sgp1.digitalocean.com/x"
+  },
+  {
+    "slug": "tor1",
+    "name": "Toronto",
+    "url": "http://speedtest-tor1.digitalocean.com/x"
   }
 ]
