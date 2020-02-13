@@ -1,6 +1,6 @@
 import App from './App.svelte';
 
-import 'bulma';
+import '@/sass/bulma.sass';
 
 const app = new App({
   target: document.body,

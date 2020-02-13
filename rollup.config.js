@@ -9,6 +9,7 @@ import postcss from 'rollup-plugin-postcss';
 import babel from 'rollup-plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import { scss } from 'svelte-preprocess';
+import cssnano from 'cssnano';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -48,7 +49,11 @@ export default {
     image(),
 
     postcss({
-      extract: true
+      extract: true,
+
+      plugins: [
+        cssnano
+      ]
     }),
 
     babel({

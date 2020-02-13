@@ -90,6 +90,9 @@
 <style lang="sass">
 .card-header-title
   justify-content: center
+
+.field
+  margin-bottom: 1rem
 </style>
 
 <div class="card">
