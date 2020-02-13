@@ -119,11 +119,10 @@
       {/if}
     </div>
 
-    {#each sortedRegions as { name, slug, url, latency }}
+    {#each sortedRegions as { name, slug, latency }}
       <RegionBlock
         name={name}
         slug={slug}
-        url={url}
         latency={latency}
         started={started}
       />
