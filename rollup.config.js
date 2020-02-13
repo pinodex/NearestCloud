@@ -6,6 +6,7 @@ import json from '@rollup/plugin-json';
 import image from '@rollup/plugin-image';
 import livereload from 'rollup-plugin-livereload';
 import postcss from 'rollup-plugin-postcss';
+import babel from 'rollup-plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import { scss } from 'svelte-preprocess';
 
@@ -48,6 +49,12 @@ export default {
 
     postcss({
       extract: true
+    }),
+
+    babel({
+      extensions: ['.js', '.mjs', '.html', '.svelte'],
+      exclude: ['node_modules/@babel/**', 'node_modules/core-js/**'],
+      runtimeHelpers: true
     }),
 
     // If you have external dependencies installed from
