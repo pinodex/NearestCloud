@@ -56,8 +56,10 @@
 @import '../sass/variables.sass'
 
 .hero
-  padding-top: $navbar-height
   margin-bottom: 5rem
+
+  &.is-fullheight
+    min-height: calc(100vh - #{$navbar-height})
 </style>
 
 <div class="hero is-dark is-fullheight">

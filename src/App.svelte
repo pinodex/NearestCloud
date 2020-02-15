@@ -26,8 +26,10 @@
     links={navbarLinks}
   />
 
-  <Route path="/"><Home /></Route>
-  <Route path="/faq"><Faq /></Route>
+  <div class="page-content">
+    <Route path="/"><Home /></Route>
+    <Route path="/faq"><Faq /></Route>
+  </div>
 </Router>
 
 <footer class="footer">
