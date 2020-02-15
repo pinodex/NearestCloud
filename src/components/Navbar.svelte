@@ -33,6 +33,11 @@
   }
 </script>
 
+<style lang="sass">
+.navbar
+  border-bottom: 3px solid #fafafa
+</style>
+
 <ClickOutside
   on:clickoutside={close}
 >

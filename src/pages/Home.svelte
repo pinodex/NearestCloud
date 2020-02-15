@@ -1,4 +1,5 @@
 <script>
+  import { scrollTo } from 'svelte-scrollto';
   import ProviderPanel from '@/components/ProviderPanel.svelte';
   import providers from '@/providers/index.js';
 
@@ -12,6 +13,11 @@
 
   function start() {
     window.dispatchEvent(new CustomEvent('pingStart'));
+
+    scrollTo({
+      element: '#main-content',
+      offset: -64
+    });
   }
 
   function reset(dispatch = true) {
@@ -85,7 +91,7 @@
   </div>
 </div>
 
-<div class="container">
+<div id="main-content" class="container">
   <div class="columns">
     {#each providers as { name, regions }}
       <div class="column">
