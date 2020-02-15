@@ -47,11 +47,14 @@
 </script>
 
 <style lang="sass">
+@import '../sass/variables.sass'
+
 .hero
+  padding-top: $navbar-height
   margin-bottom: 5rem
 </style>
 
-<div class="hero is-light">
+<div class="hero is-dark is-fullheight">
   <div class="hero-body">
     <div class="container has-text-centered">
       <h1 class="title">NearestCloud</h1>

@@ -124,10 +124,10 @@
 
     {#each sortedRegions as { name, slug, latency }}
       <RegionBlock
-        name={name}
-        slug={slug}
-        latency={latency}
-        started={started}
+        {name}
+        {slug}
+        {latency}
+        {started}
       />
     {/each}
   </div>
