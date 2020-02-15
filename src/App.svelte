@@ -1,41 +1,26 @@
 <script>
-  import { Router, Link, Route } from 'svelte-routing';
+  import { Router, Route } from 'svelte-routing';
+
+  import Navbar from './components/Navbar.svelte';
+
   import Home from './pages/Home.svelte';
+  import Faq from './pages/Faq.svelte';
 
   export let url = '/';
 
-  let navbarLinkProps = () => ({
-    class: 'navbar-item'
-  });
+  const navbarLinks = [
+    {
+      to: '/faq',
+      text: 'How does this work?'
+    }
+  ];
 </script>
 
 <Router url="{url}">
-  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-    <div class="container">
-      <div class="navbar-brand">
-        <p class="navbar-item has-text-weight-semibold">
-          NearestCloud
-        </p>
-
-        <span role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </span>
-      </div>
-
-      <div class="navbar-menu">
-        <div class="navbar-start">
-          <Link
-            to="/"
-            getProps={navbarLinkProps}
-          >
-            Home
-          </Link>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <Navbar
+    links={navbarLinks}
+  />
 
   <Route path="/"><Home /></Route>
+  <Route path="/faq"><Faq /></Route>
 </Router>
