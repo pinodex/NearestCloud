@@ -16,6 +16,11 @@
   ];
 </script>
 
+<style lang="sass">
+.footer
+  margin-top: 5rem
+</style>
+
 <Router url="{url}">
   <Navbar
     links={navbarLinks}
@@ -24,3 +29,12 @@
   <Route path="/"><Home /></Route>
   <Route path="/faq"><Faq /></Route>
 </Router>
+
+<footer class="footer">
+  <div class="container has-text-centered">
+    <p>
+      <span>This website is open-source!</span>
+      <a href="https://github.com/pinodex/NearestCloud">Fork it on GitHub</a>
+    </p>
+  </div>
+</footer>
