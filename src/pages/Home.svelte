@@ -73,7 +73,7 @@
         {#if allCompleted}
           <button
             type="button"
-            class="button is-large is-primary"
+            class="button is-rounded is-primary"
             on:click={reset}
           >
             Reset Test
@@ -81,7 +81,7 @@
         {:else}
           <button
             type="button"
-            class="button is-large is-primary"
+            class="button is-rounded is-primary"
             disabled={allStarted}
             on:click={start}
           >

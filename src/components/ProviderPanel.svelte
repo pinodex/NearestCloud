@@ -106,14 +106,14 @@
     <div class="field">
       {#if completed}
         <button
-          class="button is-fullwidth"
+          class="button is-rounded is-fullwidth"
           on:click={reset}
         >
           Reset Test
         </button>
       {:else}
         <button
-          class="button is-fullwidth"
+          class="button is-rounded is-fullwidth"
           disabled={started}
           on:click={start}
         >
